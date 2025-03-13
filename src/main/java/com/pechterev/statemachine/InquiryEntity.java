@@ -10,6 +10,7 @@ import java.util.UUID;
 public class InquiryEntity {
 
     UUID id;
+
     String stage;
 
     Integer state;

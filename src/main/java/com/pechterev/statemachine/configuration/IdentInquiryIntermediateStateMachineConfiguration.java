@@ -1,10 +1,10 @@
 package com.pechterev.statemachine.configuration;
 
+import com.pechterev.statemachine.action.*;
 import com.pechterev.statemachine.events.IdentInquiryState;
 import com.pechterev.statemachine.events.IdentInquiryStateEvent;
 import com.pechterev.statemachine.guard.AttemptsGuard;
 import com.pechterev.statemachine.listeners.StateSmListener;
-import com.pechterev.statemachine.statemachine.action.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.pechterev.statemachine.statemachine.action;
+package com.pechterev.statemachine.action;
 
 import com.pechterev.statemachine.InquiryEntity;
 import com.pechterev.statemachine.events.IdentInquiryState;

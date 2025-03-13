@@ -3,7 +3,7 @@ package com.pechterev.statemachine.listeners;
 import com.pechterev.statemachine.events.IdentInquiryState;
 import com.pechterev.statemachine.events.IdentInquiryStateEvent;
 import com.pechterev.statemachine.exception.WrongStateTransitionException;
-import com.pechterev.statemachine.statemachine.action.SetupStateAction;
+import com.pechterev.statemachine.action.SetupStateAction;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.Message;
 import org.springframework.statemachine.StateContext;

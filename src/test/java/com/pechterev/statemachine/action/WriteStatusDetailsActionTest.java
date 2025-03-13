@@ -1,6 +1,6 @@
-package com.pechterev.statemachine;
+package com.pechterev.statemachine.action;
 
-import com.pechterev.statemachine.statemachine.action.WriteStatusDetailsAction;
+import com.pechterev.statemachine.InquiryEntity;
 import com.pechterev.statemachine.utils.IdentInquiryStateMachineUtils;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;

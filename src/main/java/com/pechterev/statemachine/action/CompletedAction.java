@@ -1,4 +1,4 @@
-package com.pechterev.statemachine.statemachine.action;
+package com.pechterev.statemachine.action;
 
 import com.pechterev.statemachine.InquiryEntity;
 import com.pechterev.statemachine.events.IdentInquiryStage;
@@ -8,16 +8,16 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.statemachine.StateContext;
 
 /**
- * Действие для перевода стадии заявки в In progress
+ * Класс для установки стадии заявки Completed
  */
 @Slf4j
-public class InProgressAction extends AbstractInquiryAction {
+public class CompletedAction extends AbstractInquiryAction {
 
     @Override
     public void execute(StateContext<IdentInquiryState, IdentInquiryStateEvent> context) {
         InquiryEntity inquiry = getInquiry(context);
-        inquiry.setStage(IdentInquiryStage.IN_PROGRESS.name());
-        log.info("Для заявки {} установлена стадия {}", inquiry.getId(), IdentInquiryStage.IN_PROGRESS);
+        inquiry.setStage(IdentInquiryStage.COMPLETED.name());
+        log.info("Для заявки {} установлена стадия {}", inquiry.getId(), IdentInquiryStage.COMPLETED);
     }
 }
 

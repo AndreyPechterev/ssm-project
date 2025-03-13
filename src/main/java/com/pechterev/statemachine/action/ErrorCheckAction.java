@@ -1,4 +1,4 @@
-package com.pechterev.statemachine.statemachine.action;
+package com.pechterev.statemachine.action;
 
 import com.pechterev.statemachine.InquiryEntity;
 import com.pechterev.statemachine.events.IdentInquiryStage;
@@ -8,15 +8,15 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.statemachine.StateContext;
 
 /**
- * Класс для установки стадии заявки Expired
+ * Установка стадии заявки в Error
  */
 @Slf4j
-public class ExpiredAction extends AbstractInquiryAction {
+public class ErrorCheckAction extends AbstractInquiryAction {
 
     @Override
     public void execute(StateContext<IdentInquiryState, IdentInquiryStateEvent> context) {
         InquiryEntity inquiry = getInquiry(context);
-        inquiry.setStage(IdentInquiryStage.EXPIRED.name());
-        log.info("Для заявки {} установлена стадия {}", inquiry.getId(), IdentInquiryState.EXPIRED);
+        inquiry.setStage(IdentInquiryStage.ERROR.name());
+        log.info("Для заявки {} установлена стадия {}", inquiry.getId(), IdentInquiryStage.ERROR);
     }
 }

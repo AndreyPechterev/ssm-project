@@ -1,4 +1,4 @@
-package com.pechterev.statemachine;
+package com.pechterev.statemachine.ext;
 
 import com.pechterev.statemachine.events.IdentInquiryStateEvent;
 import com.pechterev.statemachine.utils.IdentInquiryStateMachineUtils;

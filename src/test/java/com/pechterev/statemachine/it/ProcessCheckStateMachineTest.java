@@ -1,8 +1,11 @@
-package com.pechterev.statemachine;
+package com.pechterev.statemachine.it;
 
+import com.pechterev.statemachine.InquiryEntity;
 import com.pechterev.statemachine.events.IdentInquiryStage;
 import com.pechterev.statemachine.events.IdentInquiryState;
 import com.pechterev.statemachine.events.IdentInquiryStateEvent;
+import com.pechterev.statemachine.ext.DecreaseAttemptsStatesArgumentsProvider;
+import com.pechterev.statemachine.util.TestData;
 import com.pechterev.statemachine.utils.IdentInquiryStateMachineUtils;
 import lombok.SneakyThrows;
 import org.assertj.core.api.Assertions;
